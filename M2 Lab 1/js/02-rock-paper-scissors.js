@@ -43,21 +43,21 @@ function rockPaperScissors() {
     // 2. Computer's choice
     var computerChoice = getComputerChoice();
 
-    window.document.write("Computer throws: " + computerChoice + "<br>");
+    window.alert("Computer throws: " + computerChoice + "<br>");
 
     //4. Create a conditional to check who won
 
     if (userChoice === computerChoice) {
-        window.document.write("It's a tie!");
+        window.alert("It's a tie!");
     } else if (
         (userChoice === "rock" && computerChoice === "scissors") ||
          (userChoice === "paper" && computerChoice === "rock") || 
          (userChoice === "scissors" && computerChoice ==="paper") 
     ) {
-        window.document.write("You won! " + userChoice + " beats " + computerChoice + ".");
+        window.alert("You won! " + userChoice + " beats " + computerChoice + ".");
     }
     else {
-        window.document.write("You lose! " + computerChoice + " beats " + userChoice + ".");
+        window.alert("You lose! " + computerChoice + " beats " + userChoice + ".");
     }
 
 }
