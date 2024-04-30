@@ -1,0 +1,34 @@
+Common HTML DOM events:
+Mouse Events:
+    Mousedown
+    Mouseup
+    click
+    dblclick
+    mouseover
+    mouseout
+    mousemove
+
+Keyboard Events:
+    keydown
+    keypress
+    keyup
+
+Window Events:
+    load
+    unload
+    beforeunload
+    abort
+    error
+    resize
+    scroll
+    contextmenu
+
+Form Events:
+    focus
+    blur
+    change
+    select
+    reset
+    submit
+
+Modern browsers provide drag events like dragstart, dragend, drop, etc. and touch devices provide touchstart, touchmove, and touchend.

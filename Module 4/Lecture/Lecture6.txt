@@ -1,0 +1,42 @@
+The element interface 
+Common properties
+attributes Returns an array of all attribute nodes registered to the selected node.
+classList Returns an array of the class attributes associated with the selected element.
+
+The Attribute interface 
+Represents a DOM element's attribute as an object. In most DOM scripting situations, you will probably directly retrieve the attribute as a string 
+by a way of the Element interface's getAttribute() method. In some rare cases, this interface may come in useful.
+
+DOM HTML
+represents a standard object model and programming interface for HTML it defines:
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements 
+The events for all HTML elements
+
+The HTML DOM is a standard for getting, changing, adding, or deleting HTML elements. 
+
+DOM HTML Examples 
+How toget the ID of an element
+var images = window.document.getElementsByTagName("img");
+window.console.log("first image id: " + images[0].id);
+
+How to get the title attribute of an element
+var links = window.document.getElementsByTagName("a");
+window.console.log("second link title: " + links[1].title);
+
+How to set the title attribute of an element
+var links = window.document.getElementsByTagName("a");
+links[1].title = "New TItle";
+
+How to get the href attribute of an anchor element
+var links = window.document.getElementsByTagName("a");
+window.alert("second link href: " + links[1].href);
+
+How to get the src attribute of an image element
+var imageElement = window.document.getElementByID("image");
+window.alert("image element src: " + imageElement.src);
+
+How to set the src attribute of an image element
+var imageElement = window.document.getElementByID("image");
+imageElement.src = "building1.jpg";

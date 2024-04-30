@@ -1,0 +1,44 @@
+M4 Lecture 1: Introduction to DOM Scripting
+DOM is seperated into three levels 
+DOM Level 1 (Core and HTML)
+DOM Level 2 (Core, view, events, style, traversal and range, and html)
+DOM Level 3 (Core, Load and Save (XML), Validation , Events, XPath)
+
+Dom level 1
+Core level 1 provides a set of interfaces that can represent any structured document, as well as defining interfaces for representing an XML document.
+
+HTML Level 1 provides additional interfaces that are used with the interfaces defined in Core Level 1 to provide a more convenient view of an HTML document. 
+Node, document, element, attr, and text interfaces. All interfaces contain attributes and/or methods
+that can be used to interact with both XML and HTML documents.
+
+Primary focus of the lecture with some exceptions
+
+DOM level 2 
+DOM2 Core, Views, Events, Style, Traversal and range
+
+DOM2 HTML
+DOM2 Core extends functionality of the DOM1 Core. getEleementsById() method introduced.
+
+DOM2 Views allow programs and scripts to dynamically access and update the content of a representation of a document.
+
+DOM2 Events give a generic event system to programs and scripts. Event phases and addEventListner() introduced serveral interfaces make life easier when dealing with events
+including EventTarget, EventListner, Event, etc.
+
+DOM2 Style (DOM2 CSS) allows programs 
+
+DOM2 Traversal and Range allow programs and scripts to dynamically traverse a range of content in a document.
+
+DOM2 HTML allows programs and scripts to dynamically access and update the content and structure of HTML documents.
+
+DOM Level 3 specification contains five different specifications: The DOM3 Core, Load and Save, Validation, Events, and XPath
+
+DOM3 Core extends the functionality of the DOM1 and DOM2 core specs
+
+DOM3 Load and Save allows programs and scripts to dynamically load the content of an XML document into a DOM document and serialize a DOM document into an XML document.
+
+DOM3 Validation allows programs and scripts to dynamically update the content and the structure of documents while ensuring that the document remains valid or to ensure that the document becomes valid.
+
+DOM3 Events is the extension of the DOM2 Events specification. Focuses on keyboard events and how to handle them.
+
+DOM3 XPath provides simple functionality for accessing a DOM tree using XPath 1.0
+

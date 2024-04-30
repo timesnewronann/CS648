@@ -1,0 +1,47 @@
+What is Mongo DB?
+Database is a tool to store and structure data 
+MongoDB is not a relational database 
+Relational Database: data is stored in tables using a rows and columns format
+SQL
+
+MongoDB is a NoSQL document database
+Data in MongoDB is stored as documents
+Documents are in turn stored in what we call connections
+Faster, more efficient, and much more scalable than a traditional relational database
+
+Document: a way to organzie and store data as a set of field-value pairs
+
+{
+<field> : value,
+<field> : value,
+"name" : "Sally",
+"title" : "Engineer",
+"email" : "sally@vecta.com"
+}
+
+Collection: an organized store of documents in MongoDB usually with common fields between Documents.
+
+Document -> a way to organize and store data as a set of field-value pairs.
+
+Collection -> an organized store of documents in MongoDB, usually with common fields between documents.
+
+Collections are made up of many Documents
+
+Data is organized in field-value pairs, so each field has to have a value associated with it. A value without a field has no meaning, and no way to be stored.
+
+A field is a unique identifier for a specific datapoint.
+
+What is MongoDB Atlas?
+Atlas cloud is a fully managed database built for a widerange of applications.
+
+Atlas users can deploy clusters -> groups of servers that stores your data
+Replica Set -> a few connected mongoDB databases that store data.
+
+How does MongoDB store data?
+
+mongodump
+mongorestore
+mongoexport
+mongoimport
+
+Importing and Exporting Data 

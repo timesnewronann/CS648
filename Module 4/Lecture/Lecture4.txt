@@ -1,0 +1,41 @@
+The document interface (part 1)
+
+How to get HTML elements from the DOM
+When working with DOM scripting, the Document interface represents your web page. All objects within your web page can be selected, modified, deleted, etc. by way of the Document interface. One of the first things that you'll need to learn how to 
+do is to use the Document interface to select an element within the DOM
+
+getEleementsById(id) returns an object to the identified element
+querySelector(selector) returns the first element object within the document, in document order, that matches the specified selectors
+querySelectorAll(selector) 
+
+The document interface (part 2)
+High level properties of the Document interface for finding specific HTML elements
+
+body Return the <body> element
+documentElement Returns the root <html> element
+head Returns the <head> element of the page
+forms Returns an array of <form> elements in the web page
+Images Returns an array of <image> elements in the web page.
+Title Gets or Sets the title of the document
+Links returns an array of <a> elements in the web page.
+readyState Returns the (loading) status of the document.
+
+How to write text programmitcally within the web page
+window.document.write("Please join our email list");
+
+Retrieving the id of a form
+window.document.forms[0].id;
+
+Removing a child node from the web page
+if (error.hasChildNodes()) {
+    error.removeChild(error.childNodes[0]);
+}
+
+programmitcally creating a new <div> element, adding text to the element, and then adding it to page
+
+var newDiv = window.document.createELement("div");
+var content = window.document.createTextNode("This class sure is a nightmare!");
+
+newDiv.appendChild(content);
+var element = window.document.getEleementsById("placeholder"); // Must exist on the page first
+window.document.body.insertBefore(newDiv, element);

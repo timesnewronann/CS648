@@ -1,0 +1,25 @@
+Members of the Array object
+
+The push() method adds one or more elements to the end of an array
+and returns the length of the array:
+
+var names = ["Zak", "Fred", "Sally"];
+names = names.push("Jessica"m "John");
+window.document.write(names);
+
+Array becomes
+["Zak", "Fred", "Sally", "Jessica", "John"];
+
+The unshift() method adds ome or more elements to the front
+of an array and returns the new length of the array
+
+var names = ["Zak", "Fred", "Sally"];
+names = names.unshift("Jessica", "John");
+window.document.write(names);
+
+Array becomes 
+["Jessica", "John", "Zak", "Fred", "Sally"];
+
+returns 
+5
+

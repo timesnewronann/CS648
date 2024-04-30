@@ -1,0 +1,28 @@
+An array is an object that contains one or more items called elements. Each of the elements in an array can be a primitive data type or an object
+
+Create Arrays:
+Array Constructor Function (preferred way) :
+    var arrayName = new Array(length);
+
+Array Literal:
+    var arrayName = [elements];
+
+Populating an array
+A numeric array that uses the constructor function (not recommended):
+    var rates = new Array(14.95, 12.95, 11.95, 9.95);
+
+
+A string array:
+    var names = ["Ted Lewis", "Sue Jones", "Ray Thomas"];
+
+An array with different type of elements
+    var arrayName = ["Ted Lewis", 14, "Sue Jones", 10];
+
+Reffering to array elements:
+
+arrayName[index];
+
+var rates = [14.95, 12.95, 11.95, 9.95];
+
+window.document.write(rates[1]);
+

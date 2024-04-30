@@ -1,0 +1,16 @@
+DOM HTML Examples for Forms and Form Objects 
+Working with Textboxes
+
+Retrieving the value of a text box
+var box = window.document.getElementByID("firstname");
+window.console.log(box.value);
+
+Alternate method for retrieving the value of a text box
+window.document.getElementByID("firstname").value;
+
+Setting the value of a text box
+var search = window.document.getElementById("search");
+search.value = "Enter a search term";
+
+Alternate method for setting the value of a text box
+window.document.getEleementsById("firstName").value = "Enter your first name";

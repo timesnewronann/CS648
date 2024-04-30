@@ -1,0 +1,78 @@
+REST
+Representational state transfer
+Architectural pattern for APIs
+Succeeds older patterns such as SOAP and XMLRPC
+It is simple and has very few constructs 
+
+Resource Based
+APIs are resource-based vs action-based
+Can't find API names like getSomething or saveSomething
+APIs are formed by a combination of resources and actions
+Resources are accessed based on a URL aka endpoint
+Resources are nouns not verbs
+
+HTTP Methods as actions
+CRUD 
+
+Best Practices when Creating Endpoints
+Prefix the URI with api to separate the API from application-reated HTTP resources such as HTML files
+Adding a version to the API ensures that you respect backward compatibility for external consumers, like api 
+
+Express.js
+Minimalist web application framework
+Runs on Node.js
+Makes working with web server tasks in Node.js much easier
+
+Express.js Streamlines Node development
+import express from 'express'
+const app = express()
+
+app.use((req,res,next) => {
+    // Middleware code
+})
+
+app.get('/employees', (req,res) => {
+    // Get a collection of employees
+})
+
+app.listen(5000)
+
+Routing
+A routing module
+views 
+other request /response Methods
+Middleware
+
+Routing
+const app = express()
+
+HTTP Method   Path specification  Request and response objects 
+app.get('/employees', (req, res) => {
+    // Code to execure
+})
+
+Request Matching
+When a request is received first thing that happens is request Matching
+The request's method is matched with the route method
+If a request matches this spec, then the handler is called
+you can use app.get(), app.post(), app.put(), etc, but if you want to say, "any method," you could use app.all()
+You can also use regular expression-like patterns, but these are rarely used
+
+Route Parameters: named sections that match a part of the URL
+app.get('/employees/:id', (req,res)=> {
+    // req.params contains the value of all route params
+    // req.params.id would return the actual value of id
+})
+
+app.get('/employees/:id/projects/:projectId'), (req, res) => {
+    // Match a project that an employee may be working on
+}
+
+Handler Function
+const app = express()
+app.get('/employees', (req, res) => {
+    // Code to execute
+})
+
+Middleware
+Functions that have access to the request object, response object, and next middleware Function

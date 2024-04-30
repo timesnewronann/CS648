@@ -1,0 +1,25 @@
+Processing the Items in an Array
+Iterate over array with a for loop
+var i;
+var names = ["Ted Lewis", "Sue Jones", "Ray Thomas"];
+
+for (i = 0; i < names.length; i += 1) {
+    window.document.write(names[i]);
+}
+
+For each method 
+var names = ["Ted Lewis", "Sue Jones", "Ray Thomas"];
+names.forEach(function (names) {
+    window.document.write(names);
+});
+
+For in loop:
+discouraged 
+
+var index;
+var names = ["Ted Lewis" , "Sue Jones", "Ray Thomas"];
+for (index in names) {
+    window.document.write(names[index]);
+}
+
+Every object has a prototype

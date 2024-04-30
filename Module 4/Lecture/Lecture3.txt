@@ -1,0 +1,14 @@
+The Node Interface
+Node interface is at the top of the hierarcy and all nodes inherit members from it.
+
+Viewing the node type for the document
+window.console.log(window.document.nodeType);
+
+Viewing the node type for an element
+var element = window.document.getElementByID("linkList");
+window.console.log(element.nodeType);
+
+Viewing the node type for an element's attributes
+var element = window.document.getElementByID("linkList");
+window.console.log(element.attribute[0].nodeType);
+

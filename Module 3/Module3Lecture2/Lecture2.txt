@@ -1,0 +1,21 @@
+Declaring an array and then adding items
+
+An array that starts with four undefined elements
+var rates = new Array(3);
+rates[0] = 14.95;
+rates[1] = 12.95;
+rates[2] = 11.95;
+
+An array that starts with no elements
+var names = [];
+names[0] = "Ted Lewis";
+names[1] = "Sue Jones";
+names[2] = "Ray Thomas";
+
+How to add an element to the end of an array
+var numbers = [1,2,3,4];
+numbers[numbers.length] = 5;
+
+How to add an element at a specific index
+var numbers = [1,2,3,4];
+numbers[6] = 7;

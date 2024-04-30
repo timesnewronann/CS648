@@ -1,0 +1,25 @@
+Copying, Slicing, and Concatenating Arrays
+
+concat() -> joins two arrays and returns a new array
+join() -> joins all elements of an array into a string
+slice() -> extracts a section of an array and returns a new array
+splice() -> Removes elements from an array and (optionally) replaces them.
+
+The concat() method joins two arrays and returns a new array:
+
+var names = ["Zak", "Fred", "Sally"];
+names = names.concat("Jessica", "Mike", "John");
+window.document.write(names);
+
+Returns
+["Zak", "Fred", "Sally", "Jessica", "Mike", "John"]
+
+join() method joins all elements of an array into a string:
+var names = ["Zak", "Fred", "Sally"];
+names = names.join(" - ");
+window.document.write(names);
+
+Return 
+Zak - Fred - Sally
+
+

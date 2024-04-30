@@ -1,0 +1,27 @@
+Web Storage
+Allows a web site store and persist data on the user's system
+Data persistence in JavaScript can be handled by using hidden fields, cookies, Local Storage and Session Storage
+Local storage is retained indefinetly whereas sessions storage is lost once the browser is closed
+
+Web storage works like cookies. Cookies however, web storage is much simpler to work with
+
+localStorage.saveItem("itemname", "value")
+localStorage.getItem("itemname")
+localStorage.removeItem("itemname")
+localStorage.clear()
+
+localStorage.itemname
+
+Using web storage to create a simple page hit counter
+<p> You have visited this page
+<output>
+    <script>
+        if (localStorage.hits) {
+            localStorage.hits = Number(localStorage.hits) + 1;
+        } else {
+            localStorage.hits = 1;
+        }
+        document.write(localStorage.hits);
+    </script>
+</output>
+time(s).</p>

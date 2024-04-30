@@ -1,0 +1,17 @@
+Functions for Searching, Reserving, and Sorting
+indexOf() -> Searches the array for 
+lastIndexOf() ->
+reverse()
+sort()
+
+indexOf()
+var names = ["Zak", "Fred", "Sally", "Jessica", "John", "Mike"];
+window.document.write(names.indexOf("Sally"));
+
+Returns 2
+
+var names = ["Zak", "Fred", "Sally", "Jessica", "John", "Mike"];
+window.document.write(names.indexOf("Pepe"));
+
+Returns 
+-1

@@ -1,0 +1,26 @@
+Utility Functions
+The final three functions are what I like to call utility of miscellaneous functions.
+They don't necessarily fit into the other categories and so they will be covered here:
+
+toString() converts an array to a string and returns the result
+isArray() used to check whether the object passed to it is an array. Returns true if is and false it's not.
+map() iterates through each element in the array and allows you to call a function repeatedly to process code on each element one at a time.
+
+The array object's toString() method works just like the toString() method works on other objects. It simply converts an array to a string, and returns the result:
+
+var names = ["Zak", "Fred", "Sally", "Jessica", "John", "Mike"];
+window.document.write(names.toString());
+
+Returns 
+Zak, Fred, Sally, Jessica, John, Mike
+
+Instead of
+["Zak", "Fred", "Sally", "Jessica", "John", "Mike"];
+window.document.write(names.toString());
+
+Returns 
+Zak, Fred, Sally, Jessica, John, Mike
+
+Instead Of
+["Zak", "Fred", "Sally", "Jessica", "John", "Mike"]
+

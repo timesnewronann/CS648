@@ -1,0 +1,3 @@
+Two-Dimensional Arrays
+var employees = [["Jessica", 10] ["Zak", 9], ["Fred", 15], ["Mike", 5]];
+

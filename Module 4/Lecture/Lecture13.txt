@@ -1,0 +1,45 @@
+Asynchronous Coding and "AJAX"
+Asynchronous JavaScript and XML
+AJAX lets you recieve data from a web server without reloading the page aka "partial page refresh"
+JavaScript is essential to the use of AJAX because JavaScript not only sends the requests but also processes the responses and updates the DOM with the new data.
+To send an AJAX request, JavaScript uses the XMLHttpRequest (XHR) object
+An XHR object is often processed by a server-side application
+
+XTMLHttpRequest object
+AJAX communication was handled in JS by the XMLHttpRequest object
+series of requests and responses
+Object can include data that tells the server what data is being requested and how the data should be processed.
+
+Consuming XML Data 
+Creating an instance of XHR Object
+//create a new instance of the XMLHttpRequest() object
+var xhr = new XMLHttpRequest();
+
+Consuming json data 
+
+Get vs Post
+Get is simpler and faster than post 
+Always use post requests whenL
+A cached file is not an option (update a file or database on the server)
+Sending a large amount of data to the server (POST has no size limitations)
+Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
+Sending sensitive data 
+
+Sending GET requests to a server-side application
+
+As mentioned, the most common way of receiving dynamic data from a server is to have a server-side application generate that data and submit it back
+in the response stream on the fly. The easiest method is to simply use GET requests:
+xhr.open("GET", "demo.php");
+xhr.send;
+
+In this case however you may or may not get a cached result. An alternative would be to do this:
+xhr.open("GET", "demo.php?t=" + Math.random());
+xhr.send();
+
+You can also filter results programmatically, by passing in parameters to the server like this:
+
+xhr.open("GET", "demo.aspx?fname=Zak&lname=Ruvalcaba");
+xhr.send();
+
+The Fetch api 
+provides an interface for fetching various types of resources. 

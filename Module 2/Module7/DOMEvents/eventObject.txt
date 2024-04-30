@@ -1,0 +1,32 @@
+The Event Object:
+The object that is passed to every event handler by default
+The event object is created when the event is fired.It travels with the event on its journey through the DOM.
+The function we assign as a callback to an event listener is passed the Event object as its first argument.
+We can use this object to access info about the event that has occured.
+
+myButton.addEventListener("click", function (e) {
+    window.console.log(e.target.innerText);
+}, false);
+
+<button id = "myButton" >Click Me </button>
+
+Common Properties of the Event Object
+type: the name of the event
+target: The dom node where the event originated
+currentTarget: The dom node that the event callback is currently firing on
+bubbles: Indicates whether this is a "bubbling" event
+cancelable: Indicates whether the default behavior of this event can be prevented by calling the preventDefault() method
+defaultPrevented: States whether the preventDefault() method has been called out on the event object.
+isTrusted: An event is "trusted" when it originates from the device itself, not synthesized from within JavaScript.
+eventPhase: This number represents the phase that the event is currently in: none (0), capture (1), target (2) or bubbling(3).
+timestamp: This is the date on which the event occured.
+
+Common Methods of the Event Object:
+preventDefault: prevents any default behavior from occuring that the browswer might carry out in relation to the event
+stopPropagation(): prevents any callbacks from being fired on any nodes further along the event chain, but it does not prevent any callbacks of the 
+same event name from being fired on the current node
+stopImmediatePropagation(): Prevents any callbacks from being fired on any nodes further along the event chain, including any additional callbacks of the same event name on the current node
+
+addEventListener: registers an event listener on the event target
+dispatchEvent(): sends the event to the subscribed event listners
+removeEventListner(): removes event listners from the event target
